@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ruleset name="MVC Starter Rules">
+<description>PHP CodeSniffer rules for starter</description>
+<file>app</file>
+<file>public</file>
+<file>routes</file>
+<exclude-pattern>vendor/*</exclude-pattern>
+<rule ref="PSR12"/>
+</ruleset>

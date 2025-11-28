@@ -1,0 +1,28 @@
+{
+"name": "yourname/php-mvc-starter",
+"description": "A PHP MVC starter scaffold with lint and analysis configs",
+"type": "project",
+"license": "MIT",
+"autoload": {
+"psr-4": {
+"MvcStarter\\": "src/"
+}
+},
+"bin": ["bin/mvc"],
+"require": {},
+"require-dev": {
+"friendsofphp/php-cs-fixer": "^3.0",
+"squizlabs/php_codesniffer": "^3.7",
+"phpstan/phpstan": "^1.10"
+},
+"scripts": {
+"post-install-cmd": [
+"@php bin/mvc install"
+],
+"fix": "vendor/bin/php-cs-fixer fix",
+"lint": "vendor/bin/phpcs",
+"analyse": "vendor/bin/phpstan analyse"
+},
+"minimum-stability": "stable",
+"prefer-stable": true
+}

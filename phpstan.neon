@@ -1,0 +1,7 @@
+parameters:
+level: 5
+paths:
+- app
+- public
+excludes_analyse:
+- vendor
